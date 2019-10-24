@@ -6,6 +6,12 @@
   display: none;
 }
 
-#mouse {
+#flyingFox {
   display: none;
+}
+
+
+.wiki img{
+  height: 500px;
+  width: 800px;
 }

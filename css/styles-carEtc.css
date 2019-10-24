@@ -1,0 +1,36 @@
+body {
+  font-family: 'Antic';
+  font-size: 15px;
+  text-align: center;
+  background-color: #bfbdae;
+}
+
+#old {
+  display: none;
+}
+
+#older {
+  display: none;
+}
+
+
+#Output img {
+  height: 400px;
+  width: 800px;
+
+}
+
+#Output #old {
+  height: 600px;
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+#Output {
+  text-align: center;
+  width: 600px;
+  font-size: 30px;
+  margin-left: 150px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
