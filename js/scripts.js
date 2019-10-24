@@ -1,4 +1,5 @@
 // When button clicked: body (div class) hide, monster show, can't get rid of it unless reload
+// <submit click function event: .container: hide, else: show;>
 
 // 2nd button, when clicked, another question pops up, answer is always an alert that says "please try again".
 
@@ -11,6 +12,8 @@
 //  - list drink preferances. Only right answer is water (list at least 5)
 //  - List favorite color. Only right answer is white.
 //  - list favorite animal, input type="radio", list 5-10 creatures. Only right answer is "starfish"
+
+
 
 // when every answer is correct: monster says "AAAAAGH I HAVE BEED DE-STROYED" and hides, new css appears, alert which says "congratulations! You have earned the right to vots. Please enter your vote below."
 
@@ -28,10 +31,6 @@
 
 // BL: functions, variables, branching
 
-
-
-
-// <submit click function event: .container: hide, else: show;>
 //
 // <series of prompt (start 1 prompt):>
 //
@@ -46,8 +45,47 @@
 $(document).ready(function() {
 $("form#form").submit(function(event) {
   event.preventDefault();
-  var age = $("#age").val();
-if (age)
+
+
+  $("#receiptP").show();
+  $("#receiptP").click(function() {
+    $("#receipt").removeClass();
+    $("#receipt").addClass(".receiptEdit");
+    $("#Stroy").show();
+    $(".monster").show();
+    $(".receiptEdit").show();
+    $("#receipt").hide();
+})
+
+
+$("#Stroy").show();
+
+
+  // var stringAge = $("#W").val();
+  // var age = parseInt(stringAge);
+
 });
+
+
+
+ var age = ("#age").val();
+ var ageT = ("#ageT").val();
+ var fDr = ("#fDr").val();
+ var fCo = ("#fCo").val();
+ var fAn = ("#fAn").val();
+
+
+  if (age === 29 && ageT === 4 && fDr === "water" && fCo === "white" && fAn === "starfish")  {
+    result = [ "You may vote below."];
+    // alert("AHAHAHAH YOU CAN'T VOTE YET!!")
+  } else {
+    result = [ "AHHHHHHHHHH I HAVE BEEN DE-STROYED!!"];
+};
+
+
+
+
+
+  // ANSWERS: Age: 29. Age-T: 4; F-Dr: water. F-Co: white. F-an: Starfish.
 
 });
